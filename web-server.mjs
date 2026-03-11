@@ -10,7 +10,7 @@ const PORT = 5000;
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = `http://localhost:${PORT}/api/callback`;
+const REDIRECT_URI = `https://dino-ping.onrender.com/api/callback`;
 
 // Store access tokens in memory (for demo, use database in production)
 const userTokens = new Map();
