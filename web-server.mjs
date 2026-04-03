@@ -20,6 +20,9 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(cookieParser());
 
+console.log("loading index.mjs");
+
+import("./index.mjs");
 // Home page
 app.get('/', (req, res) => {
     res.send(`
